@@ -1,0 +1,45 @@
+body{
+        background-color: rgb(217, 248, 217);
+        padding-left: 30px;
+        padding-right: 30px;
+}
+h4{
+            font-size: 17px;
+            font-weight: normal;
+
+}
+.card{
+    margin: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 13px;
+    background-color: rgb(254, 176, 189);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px grey;
+    max-width: auto;
+    transition: transform 0.2s ease-in box-shadow 0.2s ease-out;
+}
+button{
+    display: flex;
+    justify-self: center;
+  text-decoration: none;
+  background-color: maroon;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 11px;
+    color: white;
+    font-size:medium;
+    border-radius: 9%;
+    }
+     button:hover{
+    background-color: rgb(224, 24, 24); 
+}
+h1{
+        padding: 15px;
+        margin-left: 39px;
+        background-color: rgb(94, 245, 60);
+        max-width: 1340px;
+        border-radius: 10px;
+    }
+    h2{
+    color: rgb(100, 1, 1);
+    }
