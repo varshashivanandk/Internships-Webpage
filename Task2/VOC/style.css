@@ -1,0 +1,283 @@
+/* General Page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2e2c7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+/* Branding Header */
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+background-color: #f25c5c;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+}
+
+.brand-title {
+  font-size: 29px;
+  font-weight: bolder;
+  color: #ffffff;
+  font-family: monospace;
+}
+
+/* Container Box */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  margin-top: 50px;
+  padding: 30px;
+  padding-top: 5px;
+  border-radius: 16px;
+box-shadow: 0 10px 20px grey;
+  background-color:#c9eaff;
+  animation: popIn 1s ease-in;
+}
+
+.container:hover{
+    transform: translateY(-4px);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+/* Input Field */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Style */
+.card {
+  background-color: #fbefee;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 700px;
+box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.4s ease-out;
+  text-align: center;
+}
+
+/* Card Animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card h3,
+.card h4 {
+  margin-top: 0;
+  color: #222;
+text-align: center;
+  padding-left: 0;
+}
+
+.card p {
+    text-align: center;
+  color: #333;
+  margin: 8px 0;
+  padding-left: 0;
+}
+
+.card img {
+  max-width: 130px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+justify-self: center;
+border-radius: 100%;
+
+}
+
+/* Assignment Status Badges */
+.assignment-status {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+    justify-self: center;
+
+}
+
+.assignment-status span {
+  background: #eaeaea;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+    justify-self: center;
+
+}
+
+/* Links */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 500;
+padding: 10px 20px; 
+background-color: #4CAF50; 
+color: white;
+ border-radius: 5px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+.card:hover{
+font-size: 16.5px;
+}
+
+.card.completed {
+  background-color: #dffee8;
+  border-left: 6px solid #4CAF50;
+}
+
+.card.not-completed {
+  background-color: #fadad6; 
+  border-left: 6px solid #f44336;
+}
+.card.not-completed a {
+  display: none;
+}
+.card.in-progress{
+   background-color: #f5fad6; 
+  border-left: 6px solid #e7f436;
+}
+
+/* Chart */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.chart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+  text-align: center;
+}
+
+.chart-item p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Spinner */
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toast */
+.toast {
+  visibility: hidden;
+  min-width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 14px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f25c5c;
+  color: white;
+  font-family: monospace;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
