@@ -51,7 +51,7 @@ function verifyStudent() {
 
     if (!student) {
       showSpinner(false);
-      return alert("No student found with that email.");
+      return alert("No student found with this email.");
     }
 
     const assignments = student.assignments;
